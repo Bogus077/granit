@@ -1,0 +1,37 @@
+{
+    "env": {
+        "node": true,
+        "browser": false,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 13,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "linebreak-style": ["error", "unix"],
+        "no-console": ["error", { "allow": ["warn", "error"] }],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "no-unused-vars": ["error"],
+        "eqeqeq": ["error", "always", { "null": "ignore" }],
+        "react/jsx-filename-extension": [
+        1,
+        { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+        ],
+        "react/react-in-jsx-scope": 0,
+        "react/prop-types": 0,
+        "@typescript-eslint/no-empty-function": [
+            "error",
+            { "allow": ["arrowFunctions"] }
+        ]
+    }
+}
