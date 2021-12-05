@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "bogus077@gmail.com",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
