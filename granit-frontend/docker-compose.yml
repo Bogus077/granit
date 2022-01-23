@@ -5,8 +5,8 @@ services:
     env_file:
       - .env
     volumes:
-        - ./:/app
-    entrypoint: [sh, -c, "cd /app && rm -rf .next && yarn && yarn build && yarn start"]
+      - ./:/app
+    entrypoint: [sh, -c, 'cd /app && rm -rf .next && yarn && yarn dev']
   nginx:
     image: nginx:alpine
     tty: true
