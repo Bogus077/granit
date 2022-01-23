@@ -1,6 +1,6 @@
 FROM node:14
 
-WORKDIR /var/www/skillmaps/
+WORKDIR /var/www/granite/
 
 COPY package.json . 
 # COPY package-lock.json .
