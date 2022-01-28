@@ -1,0 +1,60 @@
+@import '../../asserts/colors.scss';
+
+$sidebar-padding: 25px;
+$sidebar-width: 300px;
+$sidebar-width-short: 100px;
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: $sidebar-padding;
+  width: $sidebar-width;
+  position: relative;
+  transition: 0.3s;
+
+  &_short {
+    width: $sidebar-width-short;
+    overflow-x: hidden;
+  }
+
+  &__hr {
+    width: $sidebar-width;
+    height: 1px;
+    background-color: $gray;
+    margin: $sidebar-padding 0px;
+    margin-left: -$sidebar-padding;
+  }
+
+  &__menu {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__viewSwitcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $gray;
+    border-radius: 100%;
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    top: 95px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: 0.3s;
+
+    &_mirrored {
+      transform: rotate(-90deg);
+      top: 85px;
+    }
+  }
+}

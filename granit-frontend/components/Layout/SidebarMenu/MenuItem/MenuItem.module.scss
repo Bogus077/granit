@@ -1,0 +1,42 @@
+@import '../../../../asserts/colors.scss';
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+
+  &_short {
+    width: 50px;
+    justify-content: center;
+  }
+
+  &_active {
+    background-color: $orangeMain;
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: $orangeMainOpacity;
+    cursor: pointer;
+  }
+
+  &_active:hover {
+    background-color: $orangeMain;
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+  }
+
+  &__text {
+    margin-left: 20px;
+  }
+}
