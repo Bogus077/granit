@@ -2,7 +2,7 @@
 
 $sidebar-padding: 25px;
 $sidebar-width: 300px;
-$sidebar-width-short: 100px;
+$sidebar-width-short: 110px;
 
 .layout {
   display: flex;
@@ -46,15 +46,23 @@ $sidebar-width-short: 100px;
     border-radius: 100%;
     background-color: #fff;
     position: absolute;
-    right: 0px;
+    right: -10px;
     top: 95px;
     transform: rotate(90deg);
     cursor: pointer;
     transition: 0.3s;
+    color: $textMain;
 
     &_mirrored {
       transform: rotate(-90deg);
       top: 85px;
+      right: 10px;
     }
   }
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  background-color: $blueLight;
 }

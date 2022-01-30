@@ -1,0 +1,30 @@
+@import './colors.scss';
+
+@mixin header {
+  font-size: 24px;
+  font-weight: bold;
+  color: $textMain;
+}
+
+@mixin orange-header {
+  font-size: 18px;
+  color: $orangeMain;
+  font-weight: bold;
+}
+
+@mixin black-header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@mixin subheaderTest {
+  font-size: 14px;
+  font-weight: bold;
+  color: $textGray;
+}
+
+@mixin subheaderLittleTest {
+  font-size: 12px;
+  font-weight: bold;
+  color: $textGray;
+}

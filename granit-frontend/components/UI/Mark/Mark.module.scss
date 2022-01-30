@@ -1,0 +1,13 @@
+@import '../../../asserts/index.scss';
+
+.mark {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $grayOpacity;
+  border-radius: 5px;
+  border: 1px solid $gray;
+  cursor: pointer;
+}

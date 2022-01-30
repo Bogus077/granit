@@ -1,0 +1,36 @@
+@import '../../../asserts/index.scss';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+  width: 100%;
+  height: 75px;
+  background-color: #fff;
+
+  &__text {
+    @include header;
+  }
+
+  &__edit {
+    display: flex;
+    font-size: 18px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}
