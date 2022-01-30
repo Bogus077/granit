@@ -24,12 +24,14 @@ const express = require('express');
 const { serverConfig } = require('./config/config');
 const cors = require('cors');
 const app = express();
+const { kidsRouter } = require('./routes');
 
 // app.use(tokenValidation);
 app.use(cors());
 app.get('/', (request, response) => {
   response.send('Hello world!!!!!!!!!!!');
 });
+app.use('/kids', kidsRouter);
 
 app.listen(serverConfig);
 
